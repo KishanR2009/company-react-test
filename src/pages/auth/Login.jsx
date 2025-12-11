@@ -42,7 +42,7 @@ export default function Login() {
   };
 
   return (
-    <div className="d-flex justify-content-center mt-5">
+    <div className="d-flex justify-content-center mt-4">
       <div className="card p-4 shadow" style={{ width: 400 }}>
         <h3 className="text-center">Login</h3>
 
