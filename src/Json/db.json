@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "fullName": "Admin User",
+      "email": "admin@example.com"
+    },
+    {
+      "id": "2",
+      "username": "john",
+      "password": "john123",
+      "role": "customer",
+      "fullName": "John Customer",
+      "email": "john@example.com"
+    },
+    {
+      "id": "207a",
+      "username": "vraj",
+      "password": "vraj123",
+      "role": "customer",
+      "fullName": "vraj patel",
+      "email": "vraj@gmail.com"
+    }
+  ],
+  "foods": [],
+  "categories": [
+    {
+      "id": "c101",
+      "categoryName": "Pizza",
+      "categoryDescription": "Italian-style pizzas with various toppings"
+    },
+    {
+      "id": "c102",
+      "categoryName": "Burgers",
+      "categoryDescription": "Beef, chicken, and veg burgers"
+    },
+    {
+      "id": "c103",
+      "categoryName": "Sandwiches",
+      "categoryDescription": "Grilled and cold sandwiches"
+    },
+    {
+      "id": "c104",
+      "categoryName": "Pasta",
+      "categoryDescription": "Different varieties of pasta dishes"
+    },
+    {
+      "id": "c105",
+      "categoryName": "Indian",
+      "categoryDescription": "Indian meals including curries, rotis, rice"
+    },
+    {
+      "id": "c106",
+      "categoryName": "Chinese",
+      "categoryDescription": "Noodles, fried rice, dumplings and more"
+    },
+    {
+      "id": "c107",
+      "categoryName": "Desserts",
+      "categoryDescription": "Cakes, ice creams, sweets"
+    },
+    {
+      "id": "c108",
+      "categoryName": "Beverages",
+      "categoryDescription": "Soft drinks, juices, coffee, tea"
+    },
+    {
+      "id": "c109",
+      "categoryName": "Snacks",
+      "categoryDescription": "Light snacks like fries, nuggets, chips"
+    },
+    {
+      "id": "c110",
+      "categoryName": "Salads",
+      "categoryDescription": "Healthy salad bowls and sides"
+    },
+    {
+      "id": "c111",
+      "categoryName": "Seafood",
+      "categoryDescription": "Fish and seafood dishes"
+    },
+    {
+      "id": "c112",
+      "categoryName": "Bakery",
+      "categoryDescription": "Breads, pastries, cookies"
+    },
+    {
+      "id": "c113",
+      "categoryName": "BBQ & Grill",
+      "categoryDescription": "Barbecue and grilled food items"
+    },
+    {
+      "id": "c114",
+      "categoryName": "Street Food",
+      "categoryDescription": "Popular local street-style food"
+    },
+    {
+      "id": "c115",
+      "categoryName": "Mexican",
+      "categoryDescription": "Tacos, burritos, nachos, quesadillas"
+    },
+    {
+      "id": "c116",
+      "categoryName": "Thai",
+      "categoryDescription": "Authentic Thai curries and noodles"
+    },
+    {
+      "id": "c117",
+      "categoryName": "Japanese",
+      "categoryDescription": "Sushi, ramen, tempura, and more"
+    },
+    {
+      "id": "c118",
+      "categoryName": "Korean",
+      "categoryDescription": "Famous Korean dishes like kimchi, bibimbap"
+    },
+    {
+      "id": "c119",
+      "categoryName": "Breakfast",
+      "categoryDescription": "Morning meals such as omelettes, pancakes, idli"
+    },
+    {
+      "id": "c120",
+      "categoryName": "Fast Food",
+      "categoryDescription": "Quick meals like fries, wraps, nuggets"
+    },
+    {
+      "id": "c121",
+      "categoryName": "Healthy Food",
+      "categoryDescription": "Low-calorie and nutritious foods"
+    },
+    {
+      "id": "c122",
+      "categoryName": "Vegan",
+      "categoryDescription": "Completely plant-based food items"
+    },
+    {
+      "id": "c123",
+      "categoryName": "Continental",
+      "categoryDescription": "European-style meals and sides"
+    },
+    {
+      "id": "c124",
+      "categoryName": "Biryani",
+      "categoryDescription": "Different types of biryani and pulao"
+    },
+    {
+      "id": "c125",
+      "categoryName": "South Indian",
+      "categoryDescription": "Dosa, idli, vada, sambar, chutneys"
+    },
+    {
+      "id": "c126",
+      "categoryName": "North Indian",
+      "categoryDescription": "Paneer dishes, curries, naan, paratha"
+    },
+    {
+      "id": "c127",
+      "categoryName": "Ice Cream",
+      "categoryDescription": "Ice creams, sundaes, and frozen desserts"
+    },
+    {
+      "id": "c128",
+      "categoryName": "Juices & Shakes",
+      "categoryDescription": "Fresh juices, milkshakes, smoothies"
+    },
+    {
+      "id": "c129",
+      "categoryName": "Tea & Coffee",
+      "categoryDescription": "Hot beverages including tea, coffee, latte"
+    },
+    {
+      "id": "c130",
+      "categoryName": "Momos",
+      "categoryDescription": "Steamed and fried dumplings with fillings"
+    },
+    {
+      "id": "c131",
+      "categoryName": "Wraps & Rolls",
+      "categoryDescription": "Kathi rolls, shawarma, tortilla wraps"
+    },
+    {
+      "id": "c132",
+      "categoryName": "Sushi",
+      "categoryDescription": "Japanese sushi varieties"
+    }
+  ],
+  "orders": [
+    {
+      "id": "6d31",
+      "foodId": null,
+      "name": "Veg Pizza",
+      "price": "120",
+      "qty": 1,
+      "userId": "207a",
+      "date": "12/10/2025, 6:55:47 PM"
+    }
+  ],
+  "cart": []
+}
