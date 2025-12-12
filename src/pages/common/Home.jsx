@@ -5,7 +5,7 @@ export default function Home() {
   const { user } = useAuth();
 
   return (
-    <div>
+    <div className="mt-5">
       <h2>Welcome {user?.username}</h2>
       <p>Email: {user?.email}</p>
     </div>
