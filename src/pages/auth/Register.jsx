@@ -96,7 +96,7 @@ export default function Register() {
             value={form.role}
             onChange={change}
           >
-            <option value="">-- Select Role--</option>
+            <option value="">Select Role</option>
             <option value="Admin">Admin</option>
             <option value="Customer">Customer</option>
           </select>

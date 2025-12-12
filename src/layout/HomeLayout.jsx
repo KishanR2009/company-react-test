@@ -14,8 +14,8 @@ export default function HomeLayout() {
 
       <div
         style={{
-          marginTop: "70px",
-          marginLeft: user ? "250px" : "0",
+          marginTop: "20px",
+          marginLeft: user ? "220px" : "0",
           padding: "20px",
           transition: "0.3s",
         }}

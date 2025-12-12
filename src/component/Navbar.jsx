@@ -13,11 +13,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-dark bg-dark px-4 shadow-sm fixed-top">
-      {/* App Name */}
-      <Link className="navbar-brand fw-bold fs-4" to="/home">
-        <i className="bi bi-box-seam me-2"></i> MyApp
-      </Link>
+    <nav className="navbar navbar-dark bg-dark px-4 shadow-sm fixed-top d-flex justify-content-end">
+  
 
       {/* Show Logout ONLY when user is logged in */}
       {user && (

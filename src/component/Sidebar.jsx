@@ -4,21 +4,20 @@ import { useAuth } from "../context/AuthContext";
 export default function Sidebar() {
   const { user } = useAuth();
 
-  if (!user) return null; // Hide sidebar if not logged in
+  if (!user) return null;
 
   return (
     <div
-      className="d-flex flex-column p-3 bg-dark text-white vh-100"
-      style={{ width: "250px", position: "fixed", top: 0, left: 0 }}
+      className="d-flex flex-column p-4 bg-dark text-white"
+      style={{
+        width: "200px",
+        position: "fixed",
+        top: "53px",
+        left: 0,
+        height: "calc(100vh - 53px)", // ⭐ Sidebar fits perfectly
+        overflowY: "auto", // ⭐ Enables scrolling
+      }}
     >
-      <Link
-        to="/home"
-        className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none fw-bold fs-4"
-      >
-        <i className="bi bi-list me-2"></i> Menu
-      </Link>
-      <hr />
-
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
           <Link to="/home/category" className="nav-link text-white">
