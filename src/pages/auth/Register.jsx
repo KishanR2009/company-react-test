@@ -55,65 +55,74 @@ export default function Register() {
     }
   };
 
-  return (
-    <div className="d-flex justify-content-center mt-5">
-      <div className="card p-4 shadow" style={{ width: 400 }}>
-        <h3 className="text-center">Register</h3>
+ return (
+  <div className="d-flex justify-content-center mt-5">
+    <div className="card p-4 shadow" style={{ width: 400 }}>
+      <h3 className="text-center">Register</h3>
 
-        {err && <div className="alert alert-danger">{err}</div>}
+      {err && <div className="alert alert-danger">{err}</div>}
 
-        <form onSubmit={submit}>
-          <input
-            name="username"
-            className="form-control mb-3"
-            placeholder="Username"
-            value={form.username}
+      <form onSubmit={submit}>
+        <input
+          name="username"
+          className="form-control mb-3"
+          placeholder="Username"
+          value={form.username}
+          onChange={change}
+        />
+
+        <input
+          name="email"
+          type="email"
+          className="form-control mb-3"
+          placeholder="Email"
+          value={form.email}
+          onChange={change}
+        />
+
+        <input
+          name="password"
+          type="password"
+          className="form-control mb-3"
+          placeholder="Password"
+          value={form.password}
+          onChange={change}
+        />
+
+        <div className="mb-3">
+          <select
+            className="form-control"
+            name="role"
+            value={form.role}
             onChange={change}
-          />
+          >
+            <option value="">-- Select Role--</option>
+            <option value="Admin">Admin</option>
+            <option value="Customer">Customer</option>
+          </select>
+        </div>
 
-          <input
-            name="email"
-            type="email"
-            className="form-control mb-3"
-            placeholder="Email"
-            value={form.email}
-            onChange={change}
-          />
+        <input
+          name="fullName"
+          type="text"
+          className="form-control mb-3"
+          placeholder="FullName"
+          value={form.fullName}
+          onChange={change}
+        />
 
-          <input
-            name="password"
-            type="password"
-            className="form-control mb-3"
-            placeholder="Password"
-            value={form.password}
-            onChange={change}
-          />
+        <button className="btn btn-success w-100">Register</button>
 
-          <div className="mb-3">
-            <select
-              className="form-control"
-              name="role"
-              value={form.role}
-              onChange={change}
-            >
-              <option value="">-- Select Role--</option>
-              <option value="Admin">Admin</option>
-              <option value="Customer">Customer</option>
-            </select>
-          </div>
-
-          <input
-            name="fullName"
-            type="text"
-            className="form-control mb-3"
-            placeholder="FullName"
-            value={form.fullName}
-            onChange={change}
-          />
-
-          <button className="btn btn-success w-100">Register</button>
-        </form>
-      </div>
+        {/* Login Link here */}
+        <p className="text-center mt-3">
+          Already have an account?{" "}
+          <a href="/" className="text-primary" style={{ textDecoration: "none" }}>
+            Login
+          </a>
+        </p>
+      </form>
     </div>
-  );
+  </div>
+);
+
 }

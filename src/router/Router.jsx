@@ -70,7 +70,10 @@
 //   return <RouterProvider router={router} />;
 // }
 
+//===================================================================================================================
+
 // lazy loading
+
 import React, { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
