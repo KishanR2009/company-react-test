@@ -4,7 +4,7 @@ import { getFoods } from "../../api/foodAPI";
 import { getCategoriesById } from "../../api/categoryAPI";
 
 export default function FoodByCategory() {
-  const { id } = useParams(); // category id
+  const { id } = useParams();
   const [foods, setFoods] = useState([]);
   const [category, setCategory] = useState(null);
 
@@ -25,8 +25,7 @@ export default function FoodByCategory() {
   };
 
   return (
-    <div className="container mt-4">
-      {/* Header Bar */}
+    <div className="container mt-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold text-primary m-0">
           🍽 Foods in: {category?.categoryName}
@@ -37,14 +36,12 @@ export default function FoodByCategory() {
         </Link>
       </div>
 
-      {/* If no foods */}
       {foods.length === 0 && (
         <div className="alert alert-warning text-center fw-semibold">
           No foods found in this category!
         </div>
       )}
 
-      {/* Food Cards */}
       <div className="row">
         {foods.map((food) => (
           <div className="col-md-4 mb-4" key={food.id}>
@@ -56,7 +53,6 @@ export default function FoodByCategory() {
                 transition: "0.3s",
               }}
             >
-              {/* Food Image */}
               {food.foodImage ? (
                 <img
                   src={food.foodImage}

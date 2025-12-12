@@ -14,9 +14,6 @@ export default function Navbar() {
 
   return (
     <nav className="navbar navbar-dark bg-dark px-4 shadow-sm fixed-top d-flex justify-content-end">
-  
-
-      {/* Show Logout ONLY when user is logged in */}
       {user && (
         <button className="btn btn-danger" onClick={handleLogout}>
           Logout

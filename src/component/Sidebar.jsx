@@ -14,8 +14,8 @@ export default function Sidebar() {
         position: "fixed",
         top: "53px",
         left: 0,
-        height: "calc(100vh - 53px)", // ⭐ Sidebar fits perfectly
-        overflowY: "auto", // ⭐ Enables scrolling
+        height: "calc(100vh - 53px)", 
+        overflowY: "auto",
       }}
     >
       <ul className="nav nav-pills flex-column mb-auto">

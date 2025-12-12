@@ -168,7 +168,9 @@
 //   );
 // }
 
+
 // after ViewAllFood button
+
 import { Link } from "react-router-dom";
 import { deleteCategory, getCategories } from "../../api/categoryAPI";
 import { useEffect, useState } from "react";
@@ -236,8 +238,6 @@ export default function ListCategory() {
                 <td>{index + 1}</td>
                 <td>{c.categoryName}</td>
                 <td>{c.categoryDescription}</td>
-
-                {/* FIXED: Action column must always be inside ONE <td> */}
                 <td>
                   {isAdmin ? (
                     <>

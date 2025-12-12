@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:3000/categories"; 
+const URL = "http://localhost:3000/categories";
 
 export const getCategories = () => axios.get(URL);
 

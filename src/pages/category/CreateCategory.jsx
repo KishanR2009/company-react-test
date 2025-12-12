@@ -82,13 +82,7 @@
 //   );
 // }
 
-
-
-
-
 // =======================================================after display toaster=============================================
-
-
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -163,7 +157,6 @@ export default function CreateCategory() {
             />
           </div>
 
-          {/* Submit */}
           <button
             className="btn btn-primary w-100 mt-3 py-2"
             type="submit"
